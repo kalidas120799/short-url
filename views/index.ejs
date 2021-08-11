@@ -97,6 +97,7 @@
                 shorturl: myshorturl
             }
             var short = await axios.post("/shorturl", newshorturl).then((res) => { return res.data }).catch((err) => { return err.response })
+            console.log(short)
             document.getElementById("myshorturl").innerHTML = ""
             document.getElementById("myshorturl").style.display = "block"
             var { shorturl } = short
