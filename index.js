@@ -1,7 +1,7 @@
 const express = require("express")
 const morgan = require("morgan")
 const dotenv = require("dotenv").config()
-const port = 3001 || process.env.PORT
+const port =process.env.PORT || 3001
 var app = express()
 
 //database
